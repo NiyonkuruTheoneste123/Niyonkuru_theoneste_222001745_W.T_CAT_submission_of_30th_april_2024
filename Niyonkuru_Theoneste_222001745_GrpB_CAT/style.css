@@ -1,0 +1,111 @@
+/* Resetting default margins and padding */
+ul, h1, body, html { 
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    display: flex; /* Uses flexbox to manage the layout */
+    flex-direction: column;
+    font-family: Aptos (Body);
+    font-size: 17px;
+    color: white;
+    background-color: black;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: orange;
+}
+
+nav {
+    background-color: dimgray;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover,
+nav ul li a.active { /* Enhanced style for active page */
+    background-color: orange;
+    font-weight: bold; /* Make active nav item bold */
+    border-radius: 5px; /* Rounded corners for active nav item */
+}
+
+.dropdown-contents {
+    display: none;
+    position: absolute;
+    background-color: darkcyan;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-contents {
+    display: block;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute; /* Changed from fixed to absolute */
+    bottom: 0;
+    width: 100%;
+}
+
+.toolbar {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .toolbar img {
+        display: block;
+    }
+    
+    .footer {
+        position: relative; /* Adjusted to position relative in small screens */
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #ccc;
+        padding: 10px 0;
+        background-color: dimgray;
+    }
+}

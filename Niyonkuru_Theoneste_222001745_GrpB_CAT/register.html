@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styl.css" title="style 1" media="screen, tv, projection, handheld, print" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+</head>
+<body style="background-color: lightgray;">
+    <h2 style="border: solid blue; border-width: 5px;">User Registration</h2>
+    <form method="post" action="register.php">
+        <label for="Names">Names:</label><br>
+        <input type="text" id="Names" name="Names" required><br>
+
+        <label for="Email">Email:</label><br>
+        <input type="text" id="Email" name="Email" required><br>
+
+        <label for="Phone">Phone:</label><br>
+        <input type="text" id="Phone" name="Phone" required><br>
+
+        <label for="Gender">Gender:</label><br>
+        <select id="Gender" name="Gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+
+        <label for="Username">Username:</label><br>
+        <input type="text" id="Username" name="Username" required><br>
+
+        <label for="Password">Password:</label><br>
+        <input type="password" id="Password" name="Password" required><br>
+
+        <label for="Role">Role:</label><br>
+        <input list="roles" id="Role" name="Role" required>
+        <datalist id="roles">
+            <option value="Employee">
+            <option value="Supplier">
+            <option value="Customer">
+            <option value="Finance">
+            <option value="Other">
+        </datalist><br>
+
+        <label for="activation_code">Activation Code:</label><br>
+        <input type="text" id="activation_code" name="activation_code" required><br><br>
+
+        <center><input class="nobl" type="submit" value="Register"></center><br>
+        <center><a class="nnnn" href="./login.html">Login</a></center>
+    </form>
+</body>
+</html>

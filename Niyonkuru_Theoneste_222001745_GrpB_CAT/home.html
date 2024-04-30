@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Linking to external stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print" />
+    <!-- Defining character encoding -->
+    <meta charset="utf-8">
+    <!-- Setting viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+</head>
+<header>
+    <div class="header" style="height: 40px; background-image: url('./images/myphoto.jpg')">
+    <marquee><h1 style="font-size: 24px; color: skyblue; ">PRODUCTION COMPANY MANAGEMENT SYSTEM</marquee></h1>
+</div>
+    <div class="toolbar" style="border-style: solid; border-color: yellow;">
+        <img src="./Images/ab.jpg" width="90" height="60" alt="Logo">
+        <div class="search-bar">
+            <form class="d-flex" role="search" action="search.php">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    <nav style="border-style: solid; border-color: green;">
+        <ul style="list-style-type: none; padding: 0;">
+            <li style="display: inline; margin-right: 10px;"><a href="./home.html">HOME</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="./about.html">ABOUT</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="./contact.html">CONTACT</a></li>
+            <li class="dropdown" style="display: inline; margin-right: 10px;">
+                <a href="#" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">PCMS TABLES</a>
+                <div class="dropdown-contents">
+                    <!-- Links inside the dropdown menu -->
+                    <a href="./Customer.php">Customer</a>
+                    <a href="./Employee.php">Employee</a>
+                    <a href="./rawmaterials.php">Raw Materials</a>
+                    <a href="./Market.php">Market</a>
+                    <a href="./Property.php">Property</a>
+                    <a href="./Product.php">Product</a>
+                    <a href="./Finance.php">Finance</a>
+                    <a href="./Supplier.php">Supplier</a>
+                </div>
+            <li class="dropdown" style="display: down; margin-right: 10px;">
+            <a href="#">SETTINGS</a>
+            <div class="dropdown-contents">
+            <a href="./login.html">Login</a>
+            <a href="./logout.php">Logout</a>
+            <a href="./register.html">Register</a>
+            <a href="./customer.php">insert </a>
+            <a href="./delete_customer.php">delete </a>
+            <a href="./update_customer.php">update </a>
+        </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<style>
+span {
+  float: left;
+  width: 0.7em;
+  font-size: 1000%;
+  font-family: algerian, courier;
+  line-height: 80%;
+  color: yellow;
+}
+
+</style>
+
+<body >
+<div style="margin: 0px 20px; padding: 40px 0px"  >
+    <marquee loop="1" behavior="alternate"><h2 style="color: skyblue;">Welcome to Our Home</h2>
+    <p>
+        <span>G</span>reetings, and a warm welcome to the <strong>Production Company Management System</strong>!<br> We are thrilled to have you explore our innovative platform designed<br> to streamline production processes and enhance efficiency within the creative industry.<br>Dive into a world where management meets creativity,<br> ensuring your projects transition smoothly from concept to completion.<br> Enjoy your journey with us as we embark on a mission to transform production management.<br> Your adventure in optimizing production excellence starts here!</p></marquee>
+</div>
+    <footer class="footer">
+        <p>&copy; 2024 Production company management syste. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

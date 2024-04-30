@@ -1,0 +1,113 @@
+/* Normal link */
+
+body {
+    font-family: Aptos, sans-serif;
+    font-size: 17px;
+   
+    margin:;
+    background-color: gray;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    padding: 15px;
+    font-size: 17px;
+    background-color: orange;
+}
+
+nav {
+    overflow: hidden;
+    background-color: darkcyan;
+    text-align: center;
+}
+label {
+            display: inline-block;
+            width: 150px;
+            text-align: right;
+            margin-right: 10px;
+        }
+input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 200px;
+            box-sizing: border-box; /* Include padding and border in the width */
+            margin-bottom: 10px;
+        }
+
+nav a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.content {
+    margin-top: 20px;
+    padding: 20px;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+.home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 60px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.home-button:hover {
+    background-color: #45a049; /* Darker green */
+}
+table{
+    table-border: solid;
+}
