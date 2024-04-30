@@ -1,5 +1,5 @@
 # Niyonkuru_theoneste_222001745_W.T_CAT_submission_of_30th_april_2024
-Db_username: niyoth
+Db_username: niyoth/
 Db_Password: niyoth@250
 
 PROJECT DESCRIPTION: this is production company management system website that provide user friendly platform to manage company data, in this website company will be able
